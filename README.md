@@ -60,4 +60,4 @@ Displayed when all enemy waves are defeated.
 Displayed when enemies reach the end of the path.
 ![Defeat Screen](screenshots/lose-screen.png)
 
-Developed by **Emre Ouzoun**
+
