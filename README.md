@@ -1,63 +1,56 @@
 # Tower Defense Game (Java)
 
-This project is a simple **Tower Defense style game** developed using **Java** and **Swing**.
-The game is based on object-oriented programming principles and basic game loop logic.
+This project is a 2D Tower Defense game developed using Java and Swing, built around object-oriented programming principles and a custom game loop.
 
-##  Game Overview
-- Enemies follow a predefined path
-- Player places towers to stop enemies
-- Towers shoot bullets automatically
-- Enemies have health and can be destroyed
-- Game ends when enemies reach the end point
+## Screenshots
 
-##  Project Structure
+![Gameplay](screenshots/gameplay.png)
+
+## Game Overview
+
+- Enemies follow a predefined path across the map.
+- The player places defensive towers to stop incoming waves.
+- Towers automatically detect and fire projectiles at enemies within range.
+- Enemies have health bars and can be defeated before reaching the base.
+- The game ends with a win or loss screen depending on wave survival.
+
+## Project Structure
 
 ### Model
-Contains core game entities:
-- `Enemy` classes (Dragon, Viking, BuzKulesi, etc.)
-- `Tower` classes (Topcu, Okcu)
+Contains core game entities and mechanics:
+- `Enemy` classes (Dragon, Viking, etc.)
+- `Tower` classes (Topcu, Okcu, BuzKulesi)
 - `Bullet` classes (Mermi, Kule)
-- Game logic and mechanics
+- Wave and collision logic
 
 ### View
 Handles the graphical interface:
-- `GamePanel` for rendering the game
-- `KontrolPaneli` for user interaction
+- `GamePanel` for rendering the map, towers, and enemies
+- `KontrolPaneli` for tower selection and player controls
 - `MainFrame` as the main application window
 
 ### Resources
-Includes all game assets:
-- Enemy sprites
-- Tower images
-- Bullet and map images
+Includes all sprites, tower images, projectiles, and map assets.
 
-##  Technologies Used
+## Technologies Used
+
 - Java
 - Java Swing
 - Object-Oriented Programming (OOP)
 
-##  How to Run
-1. Clone the repository
-2. Open the project in NetBeans or IntelliJ IDEA
-3. Run `MainFrame.java`
+## How to Run
 
-##  Notes
-This project was developed for educational purposes to practice:
-- OOP concepts
-- Game logic
-- Java GUI programming
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/EmreOuzouns/TowerDefense.git
+   ```
+2. Open the project in NetBeans or IntelliJ IDEA.
+3. Run `MainFrame.java`.
 
-## Screenshots
+## Notes
 
-### Main Gameplay Screen
-![Main Gameplay](screenshots/gameplay.png)
+Developed to practice OOP design, game loop timing, and Java Swing GUI rendering.
 
-### Victory Screen
-Displayed when all enemy waves are defeated.
-![Victory Screen](screenshots/win-screen.png)
+## License
 
-### Defeat Screen
-Displayed when enemies reach the end of the path.
-![Defeat Screen](screenshots/lose-screen.png)
-
-
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
