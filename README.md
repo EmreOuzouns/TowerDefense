@@ -1,55 +1,34 @@
 # Tower Defense Game (Java)
 
-This project is a 2D Tower Defense game developed using Java and Swing, built around object-oriented programming principles and a custom game loop.
+This project is a 2D Tower Defense desktop game built in Java using Java Swing and object-oriented programming (OOP) principles. It was created to practice structuring a real-time game loop, managing entity lifecycles (enemies, towers, projectiles), handling collision detection, and separating game state from graphical rendering using a clean Model-View architecture.
 
-## Screenshots
+In the game, waves of enemies follow a predefined path toward the player's base while the player places different types of defensive towers along the map. Each tower type has its own range, firing behavior, and projectile logic, automatically targeting enemies within range and reducing their health bars until they are defeated or reach the end of the path.
+
+---
+
+## Technical Overview
+
+- **Model (`src/Model/`):** Defines the core entities and game mechanics, including `Enemy` classes (Dragon, Viking, etc.), `Tower` classes (Topcu, Okcu, BuzKulesi), `Bullet` classes (Mermi, Kule), wave progression, and collision checks.
+- **View (`src/View/`):** Manages the Swing GUI components—`MainFrame` as the application window, `GamePanel` for rendering the map, sprites, health bars, and projectiles on a timer-driven game loop, and `KontrolPaneli` for tower placement and player controls.
+- **Resources (`src/Resources/`):** Stores all 2D sprites, tower graphics, projectile assets, and map backgrounds.
+- **How to Run:** Clone `https://github.com/EmreOuzouns/TowerDefense.git`, open the project in NetBeans or IntelliJ IDEA, and run `MainFrame.java`.
+
+---
+
+## Interface & Screenshots
+
+### Gameplay View
+Shows the map path, placed defensive towers, active enemy waves with health bars, and the side control panel.
 
 ![Gameplay](screenshots/gameplay.png)
 
-## Game Overview
+### Win & Lose Screens
+Displayed when the player survives all incoming waves or when enemies breach the base.
 
-- Enemies follow a predefined path across the map.
-- The player places defensive towers to stop incoming waves.
-- Towers automatically detect and fire projectiles at enemies within range.
-- Enemies have health bars and can be defeated before reaching the base.
-- The game ends with a win or loss screen depending on wave survival.
+![Win Screen](screenshots/win-screen.png)
+![Lose Screen](screenshots/lose-screen.png)
 
-## Project Structure
-
-### Model
-Contains core game entities and mechanics:
-- `Enemy` classes (Dragon, Viking, etc.)
-- `Tower` classes (Topcu, Okcu, BuzKulesi)
-- `Bullet` classes (Mermi, Kule)
-- Wave and collision logic
-
-### View
-Handles the graphical interface:
-- `GamePanel` for rendering the map, towers, and enemies
-- `KontrolPaneli` for tower selection and player controls
-- `MainFrame` as the main application window
-
-### Resources
-Includes all sprites, tower images, projectiles, and map assets.
-
-## Technologies Used
-
-- Java
-- Java Swing
-- Object-Oriented Programming (OOP)
-
-## How to Run
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/EmreOuzouns/TowerDefense.git
-   ```
-2. Open the project in NetBeans or IntelliJ IDEA.
-3. Run `MainFrame.java`.
-
-## Notes
-
-Developed to practice OOP design, game loop timing, and Java Swing GUI rendering.
+---
 
 ## License
 
